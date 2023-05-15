@@ -1,7 +1,13 @@
+0. a. Pull and run dashboard 
+docker pull kubernetesui/dashboard
+
+0. b Deploy dashboard 
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+
 1. Create adminuser.yaml file
 
 2. Run command 
-    kubectl apply -f dashboard-adminuser.yaml
+   kubectl apply -f .\adminuser.yml
 
 3. create ClusterRoleBinding.yml file and apply
     kubectl apply -f ClusterRoleBinding.yml
